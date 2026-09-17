@@ -4,7 +4,7 @@ import os
 from urllib.parse import urlparse
 
 
-def parse_robots_txt(text, crawler_name="MyCrawler"):
+def parse_robots_txt(text, crawler_name="Junglejimcrawler"):
     rules = {}
 
     current_agents = []
@@ -93,7 +93,7 @@ def parse_robots_txt(text, crawler_name="MyCrawler"):
     }
 
 
-def get_robots_rules(url, crawler_name="MyCrawler"):
+def get_robots_rules(url, crawler_name="Junglejimcrawler"):
     filename = "robots_rules.json"
 
    

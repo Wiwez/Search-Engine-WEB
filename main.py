@@ -1,6 +1,7 @@
 from parser import get_robots_rules
+from crawler import crawl
 def main():
-    get_robots_rules("https://nytimes.com/robots.txt", "MyCrawler")
+    crawl("https://bt.dk", max_pages=10)
     print("Done.")
 
 if __name__ == "__main__":

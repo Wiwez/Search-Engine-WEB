@@ -114,5 +114,12 @@
             "/*?*utm_source="
         ],
         "crawl_delay": null
+    },
+    "https://bt.dk": {
+        "allow": [],
+        "disallow": [
+            "/preview/"
+        ],
+        "crawl_delay": null
     }
 }
