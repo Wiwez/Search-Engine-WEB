@@ -1,124 +1,68 @@
 {
-    "https://nytimes.com": {
-        "allow": [
-            "/athletic/wp/wp-admin/admin-ajax.php",
-            "/athletic/search/$",
-            "/athletic/checkout/$",
-            "/athletic/login/$",
-            "/athletic/login2/$",
-            "/athletic/live-blogs/discuss/",
-            "/athletic/mlb/game/discuss/",
-            "/svc/crosswords",
-            "/svc/games",
-            "/svc/letter-boxed",
-            "/svc/spelling-bee",
-            "/svc/wordle",
-            "/svc/connections",
-            "/svc/sudoku",
-            "/svc/strands",
-            "/svc/pips",
-            "/wirecutter/*?*utm_source=",
-            "/ads/public/",
-            "/svc/news/v3/all/pshb.rss",
-            "/wirecutter/reviews/*?*utm_source=",
-            "/wirecutter/blog/*?*utm_source=",
-            "/wirecutter/lists/*?*utm_source=",
-            "/wirecutter/gifts/*?*utm_source="
-        ],
-        "disallow": [
-            "/ads/",
-            "/adx/bin/",
-            "/athletic/wp/wp-admin/",
-            "/athletic/async-*",
-            "/athletic/search/*",
-            "/athletic/checkout/",
-            "/athletic/checkout?plan_id*",
-            "/athletic/checkout2*",
-            "/athletic/login/",
-            "/athletic/login?login_source*",
-            "/athletic/login?ref_page*",
-            "/athletic/login2/",
-            "/athletic/login2?login_source*",
-            "/athletic/login2?ref_page*",
-            "/athletic/report/",
-            "/athletic/*/discuss/*",
-            "/athletic/register/",
-            "/athletic/register?welcome_redirect*",
-            "/athletic/register2/",
-            "/athletic/register2?welcome_redirect*",
-            "/athletic/betmgm-redirect*",
-            "/athletic/cdn-cgi/",
-            "/athletic/verizon/*",
-            "/athletic/forgot-password/*",
-            "/athletic/forgot-password2/*",
-            "/athletic/amp-social-login*",
-            "/athletic/track-analytics/",
-            "/athletic/amp-auth/",
-            "/athletic/rss-feed/",
-            "/athletic/*?*rss=1",
-            "/athletic/global-color-test.php",
-            "/athletic/global-font-test.php",
-            "/athletic/graphql*",
-            "/athletic/api*",
-            "/athletic/ip*",
-            "/athletic/call-set-cookie-with-context/*",
-            "/athletic/get-current-user/",
-            "/athletic/pv.json",
-            "/athletic/following-feed-test/*",
-            "/athletic*/boxscore/*",
-            "/athletic/feed-test/",
-            "/athletic*/signed-mp3-redirect-url/*",
-            "/athletic/embedded-interactive/*",
-            "/card/panel/",
-            "/panel/",
-            "/puzzles/leaderboards/invite/*",
-            "/svc",
-            "/video/embedded/*",
-            "/search",
-            "/multiproduct/",
-            "/hd/",
-            "/inyt/",
-            "/*?*query=",
-            "/*.pdf$",
-            "/*?*login=",
-            "/*?*campaignId=",
-            "/*?*mcubz=",
-            "/*?*smprod=",
-            "/*?*ProfileID=",
-            "/*?*ListingID=",
-            "/*?*campaign_id=",
-            "/*?*hybrid=",
-            "/*?*entry=",
-            "/*?*embed=",
-            "/*?ls=",
-            "/*?*&ls=",
-            "/v1/initialize*",
-            "/v1/rgstr*",
-            "/wirecutter/wp-admin/",
-            "/wirecutter/*.zip$",
-            "/wirecutter/*.csv$",
-            "/wirecutter/deals/beta",
-            "/wirecutter/data-requests",
-            "/wirecutter/search",
-            "/wirecutter/*?s=",
-            "/wirecutter/*&xid=",
-            "/wirecutter/*?q=",
-            "/wirecutter/*?l=",
-            "/wirecutter/*?merchant=",
-            "/wirecutter/out/",
-            "/search",
-            "/subscription/*?*source=",
-            "/subscription/*?*onboarded=",
-            "/*?*smid=",
-            "/*?*partner=",
-            "/*?*utm_source="
-        ],
-        "crawl_delay": null
-    },
-    "https://bt.dk": {
+    "https://www.bt.dk": {
         "allow": [],
         "disallow": [
             "/preview/"
+        ],
+        "crawl_delay": null
+    },
+    "https://www.euroinvestor.dk": {
+        "allow": [],
+        "disallow": [
+            "/preview/"
+        ],
+        "crawl_delay": null
+    },
+    "https://woman.dk": {
+        "allow": [
+            "/",
+            "/wp-admin/admin-ajax.php"
+        ],
+        "disallow": [
+            "/*?s=",
+            "/search",
+            "/component-overview",
+            "/admin-dashboard/overview",
+            "/*.pdf",
+            "/wp-admin/",
+            "/api/auth/validate",
+            "/*_mdAttr="
+        ],
+        "crawl_delay": null
+    },
+    "https://www.berlingske.dk": {
+        "allow": [],
+        "disallow": [
+            "/preview/"
+        ],
+        "crawl_delay": null
+    },
+    "https://www.weekendavisen.dk": {
+        "allow": [],
+        "disallow": [
+            "/preview/"
+        ],
+        "crawl_delay": null
+    },
+    "https://www.facebook.com": {
+        "allow": [],
+        "disallow": [
+            "/"
+        ],
+        "crawl_delay": null
+    },
+    "https://twitter.com": {
+        "allow": [],
+        "disallow": [
+            "/",
+            "/i/u"
+        ],
+        "crawl_delay": 1.0
+    },
+    "https://www.instagram.com": {
+        "allow": [],
+        "disallow": [
+            "/"
         ],
         "crawl_delay": null
     }
