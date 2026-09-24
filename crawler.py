@@ -8,6 +8,7 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 
 from parser import get_robots_rules
+from shingles import find_near_duplicates
 
 
 def is_allowed(url, rules):
@@ -59,10 +60,11 @@ def readJSONrules(url):
     return None
 
 
-def crawl(seed_url, max_pages=1000):
+def crawl(seed_url, max_pages=1000, near_duplicate_threshold=0.85):
 
     frontier = deque([seed_url])
     visited = set()
+    downloaded_pages = []
 
     headers = {
         "User-Agent": "Junglejimcrawler"
@@ -141,6 +143,8 @@ def crawl(seed_url, max_pages=1000):
             f.write(f"<!-- URL: {url} -->\n")
             f.write(html)
 
+        downloaded_pages.append((url, filename))
+
         print("DOWNLOADED:", url)
 
         # --------------------------------
@@ -183,3 +187,17 @@ def crawl(seed_url, max_pages=1000):
                 frontier.append(new_url)
 
                 print("FOUND:", new_url)
+
+    # Compare downloaded pages after the crawl has finished.
+    def saved_pages():
+        for page_url, page_filename in downloaded_pages:
+            with open(page_filename, "r", encoding="utf-8") as page_file:
+                yield page_url, page_file.read()
+
+    duplicates = find_near_duplicates(
+        saved_pages(), threshold=near_duplicate_threshold
+    )
+    with open("near_duplicates.json", "w", encoding="utf-8") as report:
+        json.dump(duplicates, report, indent=2)
+
+    print(f"NEAR DUPLICATES: {len(duplicates)} (near_duplicates.json)")
