@@ -65,5 +65,36 @@
             "/"
         ],
         "crawl_delay": null
+    },
+    "https://www.elmundo.es": {
+        "allow": [
+            "*/elmundo/hemeroteca/*/*/*/*/index*"
+        ],
+        "disallow": [
+            "/1998/",
+            "/2002/",
+            "/s/",
+            "/cgi-bin/",
+            "/perl/",
+            "/foros/",
+            "/yodona/hemeroteca/",
+            "/metropoli/hemeroteca/",
+            "/eventos/en-directo/*.json",
+            "/eventos/en-directo/resources.html*",
+            "/noticias/envia_noticia.html",
+            "/enviaropinion.html?*",
+            "/micuenta/",
+            "*/pruebas-abierto/*",
+            "*/elmundo/hemeroteca/*/*/*/*/*"
+        ],
+        "crawl_delay": null
+    },
+    "https://www.twitter.com": {
+        "allow": [],
+        "disallow": [
+            "/",
+            "/i/u"
+        ],
+        "crawl_delay": 1.0
     }
 }

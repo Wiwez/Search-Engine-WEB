@@ -176,8 +176,8 @@ def crawl(seed_url, max_pages=1000, near_duplicate_threshold=0.85):
             # Stay on seed domain
             # --------------------------------
 
-            if parsed_new_url.netloc != seed_domain:
-                continue
+            # if parsed_new_url.netloc != seed_domain:
+            #     continue
 
             # --------------------------------
             # Add new URL to frontier

@@ -3,5 +3,35 @@
     "url": "https://www.bt.dk/",
     "duplicate_of": "https://www.bt.dk",
     "similarity": 1.0
+  },
+  {
+    "url": "https://www.bt.dk/fodbold/live-foelg-braget-mellem-danmark-og-norge-her?directpost=12500863",
+    "duplicate_of": "https://www.bt.dk/fodbold/live-foelg-braget-mellem-danmark-og-norge-her?directpost=12504995",
+    "similarity": 1.0
+  },
+  {
+    "url": "https://www.bt.dk/samfund/live-foelge-pressemoede-om-truslen-fra-rusland-her",
+    "duplicate_of": "https://www.bt.dk/samfund/live-foelge-pressemoede-om-truslen-fra-rusland-her?directpost=12505268",
+    "similarity": 1.0
+  },
+  {
+    "url": "https://www.bt.dk/krimi/fe-indkalder-til-pressemoede-nyt-om-truslen-fra-rusland",
+    "duplicate_of": "https://www.bt.dk/krimi/fe-indkalder-til-pressemoede",
+    "similarity": 1.0
+  },
+  {
+    "url": "https://www.bt.dk/fodbold/live-foelg-braget-mellem-danmark-og-norge-her",
+    "duplicate_of": "https://www.bt.dk/fodbold/live-foelg-braget-mellem-danmark-og-norge-her?directpost=12504995",
+    "similarity": 1.0
+  },
+  {
+    "url": "https://www.bt.dk/markeder",
+    "duplicate_of": "https://www.bt.dk/penge",
+    "similarity": 0.9459
+  },
+  {
+    "url": "https://www.bt.dk/privatoekonomi/live-prischok",
+    "duplicate_of": "https://www.bt.dk/privatoekonomi/live-prischok?directpost=12504676",
+    "similarity": 1.0
   }
 ]
